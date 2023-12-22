@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+	<img class="centered-logo" src="./images/logo.png" height="50%" width="50%" />
+        <form action="register.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="country">Country:</label>
+		<select id="country" name="country" required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="eg">Egypt</option>
+            </select>
+<br><br>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="index.php">Login here</a></p>
+    </div>
+</body>
+</html>
